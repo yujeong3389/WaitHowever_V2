@@ -3,10 +3,10 @@ import styled from 'styled-components';
 const S={};
 
 S.Background=styled.div`
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #E5E2D9;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* overflow: auto; */
     display: flex;
     justify-content: center;
@@ -23,6 +23,7 @@ S.Container = styled.div`
     overflow: hidden; 
     position: relative;
     padding:10%;
+    /* padding-top:5%; */
 `;
 
 S.Title = styled.div`
@@ -41,7 +42,7 @@ S.Title2=styled.div`
 S.Input = styled.textarea`
   width: 98%;
   /* max-width: 500px; */
-  height: 200px;
+  height: 300px;
   padding: 1%;
   font-size: 1rem;
   margin-bottom: 2rem;
