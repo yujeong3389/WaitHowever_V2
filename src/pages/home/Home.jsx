@@ -5,8 +5,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import S from './style';
 import { useNavigate } from 'react-router-dom';
 
-// Google Generative AI 인스턴스 생성 (테스트용으로만 사용)
-const API_KEY = "AIzaSyCNqQOlZWlx5ip5hOxcvxnKWsfr7Q0fKig";  // 실제 API 키를 넣으세요
+const API_KEY = "AIzaSyCcCTgLslAn4ZqUCGmVTV0BUVykeJinpNw"; 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 const Home = () => {
@@ -22,7 +21,7 @@ const Home = () => {
         }
         setLoading(true);
         try {
-            // system_instruction 포함하여 요청 보내기
+            
             const model = genAI.getGenerativeModel({
                 model: "gemini-1.5-flash",
                 generationConfig: {
