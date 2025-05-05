@@ -20,7 +20,7 @@ const Home = () => {
         }
         setLoading(true);
         try {
-            // 1️⃣ Flask 서버에 URL 전달하여 기사 본문 크롤링
+            //  Flask 서버에 URL 전달하여 기사 본문 크롤링
             const crawlResponse = await axios.get(`http://127.0.0.1:5000/crawl?url=${encodeURIComponent(url)}`);
             const articleContent = crawlResponse.data.content;
 
@@ -58,7 +58,6 @@ const Home = () => {
             **policy, agitation, keyword, facts, perspective**.
             `;
 
-            // 텍스트 생성 요청
             const result = await model.generateContent(detailedPrompt);
             const res = await result.response;
             const text = await res.text();

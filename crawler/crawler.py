@@ -3,7 +3,7 @@ from newspaper import Article
 from flask_cors import CORS  
 
 app = Flask(__name__)
-CORS(app)  # 모든 도메인에 대해 CORS 허용
+CORS(app)  
 
 @app.route('/crawl', methods=['GET'])
 def crawl_article():

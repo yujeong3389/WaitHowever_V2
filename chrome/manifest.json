@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Wait, However",
+  "version": "1.0",
+  "description": "기사 URL을 분석하여 정치 성향과 관점을 알려주는 도우미",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/image1.png",
+      "48": "images/image2.png",
+      "128": "images/image3.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
+

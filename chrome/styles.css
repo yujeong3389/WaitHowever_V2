@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    width: 350px;
+    padding: 10px 5px;
+    height: 100%;
+    background-color: #E5E2D9;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .container {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    position: relative;
+    padding:5% 10%;
+  }
+  
+  #result {
+    /* margin-top: 15px; */
+    text-align: left;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+  
+
+#analyzeBtn{
+    margin-top: 20px;
+    align-self: flex-end; 
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #708286;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#keyword{
+    background-color: #86A789;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
